@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://dd04w1oysduny"]
+
+[ext_resource type="Texture2D" uid="uid://df5g6ktyrlfab" path="res://Player & NPC/Snail/slug-1.png" id="1_qjb48"]
+[ext_resource type="Texture2D" uid="uid://3kva2lgoy7nk" path="res://Player & NPC/Snail/slug-2.png" id="2_vq0vc"]
+[ext_resource type="Texture2D" uid="uid://dc4fkepf533mp" path="res://Player & NPC/Snail/slug-3.png" id="3_mkn5w"]
+[ext_resource type="Texture2D" uid="uid://bygbbd7qsskqk" path="res://Player & NPC/Snail/slug-4.png" id="4_r6q05"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x82sk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qjb48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vq0vc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mkn5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_r6q05")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qjb48"]
+size = Vector2(19, 16)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_x82sk")
+animation = &"Idle"
+autoplay = "Idle"
+frame = 3
+frame_progress = 0.996046
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_qjb48")
