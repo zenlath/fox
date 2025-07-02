@@ -1,10 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://ifjpihxui1uj"]
+[gd_scene load_steps=2 format=3 uid="uid://ifjpihxui1uj"]
 
 [ext_resource type="Script" uid="uid://cosld6xo7tqgq" path="res://main_menu.gd" id="1_06t4h"]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_06t4h"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_7vrkn"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -14,13 +10,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_06t4h")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-material = SubResource("CanvasItemMaterial_06t4h")
-layout_mode = 0
-offset_right = 1921.0
-offset_bottom = 1078.0
-texture = SubResource("ViewportTexture_7vrkn")
 
 [node name="PlayButton" type="Button" parent="."]
 layout_mode = 2
